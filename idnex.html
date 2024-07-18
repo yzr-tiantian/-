@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网址分类</title>
+    <style>
+        /* 设置页面背景和布局 */
+        body {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 设置标题样式 */
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        /* 设置容器布局 */
+        .container {
+            display: flex;
+            width: 80%;
+            min-height: 100vh;
+        }
+
+        /* 设置侧边栏样式 */
+        .sidebar {
+            position: fixed;
+            top: 94px;
+            left: 10px;
+            width: 150px;
+            background-color: #f0f0f039;
+            margin-right: 10px;
+        }
+
+        /* 设置侧边栏标题样式 */
+        .sidebar h2 {
+            text-align: center;
+            margin-top: 10px;
+            color: #ffffff;
+        }
+
+        /* 设置侧边栏链接容器样式 */
+        .sidebar div {
+            margin-top: 5px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.658);
+        }
+
+        /* 设置侧边栏链接样式 */
+        .sidebar div a {
+            display: inline-block;
+            line-height: 30px;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar div a:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* 设置内容区域样式 */
+        .content {
+            position: relative;
+            left: 40px;
+            top: -30px;
+            flex-grow: 1;
+            margin-left: 10px;
+            margin-top: 30px;
+            padding-top: 0px;
+            width: 100%;
+            background-color: #f0f0f039;
+        }
+
+        /* 设置内容区域标题样式 */
+        .content h2 {
+            margin: 10px;
+            padding-top: 10px;
+            color: #ffffff;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 设置内容区域子标题样式 */
+        .content h3 {
+            position: relative;
+            left: -40px;
+            color: #ffffff;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 设置内容区域列表样式 */
+        .content ul {
+            margin: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        /* 设置内容区域列表项样式 */
+        .content ul li {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ffffff;
+        }
+
+        /* 设置内容区域链接样式 */
+        .content ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 1px solid black;
+            background-color: rgb(0, 0, 0);
+            padding: 1px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .content ul li a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* 设置常用软件样式 */
+        .commonSoftware {
+            padding: 1px 10px;
+            border-radius: 1px;
+        }
+
+        /* 设置闪烁效果 */
+        .highlight {
+            animation: blink 1s;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50%,
+            100% {
+                background-color: #f0f0f039;
+            }
+
+            25%,
+            75% {
+                background-color: #ffffff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 页面标题 -->
+    <h1>网址导航</h1>
+
+    <!-- 页面容器 -->
+    <div class="container">
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <h2>导航</h2>
+            <div>
+                <a href="#">软件</a>
+            </div>
+            <div>
+                <a href="#education">工具</a>
+            </div>
+            <div>
+                <a href="#entertainment">编程</a>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="content1">
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>网址分类</title>
+                <style>
+                    /* 设置页面背景和布局 */
+                    body {
+                        background-color: #121212;
+                        color: #ffffff;
+                        font-family: 'Arial', sans-serif;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    /* 设置标题样式 */
+                    h1 {
+                        color: #ffffff;
+                        text-align: center;
+                        margin-top: 20px;
+                        font-size: 2.5em;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    }
+
+                    /* 设置容器布局 */
+                    .container {
+                        display: flex;
+                        width: 80%;
+                        min-height: 100vh;
+                        margin-top: 20px;
+                    }
+
+                    /* 设置侧边栏样式 */
+                    .sidebar {
+                        position: fixed;
+                        top: 120px;
+                        left: 10px;
+                        width: 200px;
+                        background-color: #1e1e1e;
+                        margin-right: 20px;
+                        padding: 15px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(234, 0, 255, 0.3);
+                    }
+
+                    /* 设置侧边栏标题样式 */
+                    .sidebar h2 {
+                        text-align: center;
+                        margin-top: 10px;
+                        color: #ffffff;
+                        font-size: 1.5em;
+                    }
+
+                    /* 设置侧边栏链接容器样式 */
+                    .sidebar div {
+                        margin-top: 20px;
+                        line-height: 20px;
+                        background-color: #333333;
+                        border-radius: 5px;
+                        transition: background-color 0.3s;
+                        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.559);
+                    }
+
+                    /* 设置侧边栏链接样式 */
+                    .sidebar div a {
+                        display: block;
+                        line-height: 40px;
+                        text-decoration: none;
+                        text-align: center;
+                        color: #ffffff;
+                        font-size: 1.1em;
+                        transition: color 0.3s;
+                        line-height: 40px;
+                    }
+
+                    .sidebar div a:hover {
+                        color: #ffffff;
+                        border-radius: 10px;
+                    }
+
+                    /* 设置内容区域样式 */
+                    .content {
+                        flex-grow: 1;
+                        position: relative;
+                        top: -100px;
+                        margin-left: 150px;
+                        margin-top: 80px;
+                        background-color: #1e1e1e;
+                        padding-top: 10px;
+                        padding-left: 50px;
+                        padding-bottom: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(234, 0, 255, 0.5);
+                    }
+
+                    /* 设置内容区域标题样式 */
+                    .content h2 {
+                        margin-top: 10px;
+                        margin-left: -20px;
+                        color: #ffffff;
+                        font-size: 1.8em;
+                        text-shadow: 0 2px 1px rgba(234, 0, 255, 0.5);
+                    }
+
+                    /* 设置内容区域子标题样式 */
+                    .content h3 {
+                        color: #ffffff;
+                        font-size: 1.5em;
+                        margin-top: 10px;
+                        text-shadow: 0 2px 1px rgba(234, 0, 255, 0.5);
+                    }
+
+                    /* 设置内容区域列表样式 */
+                    .content ul {
+                        margin: 10px 0;
+                        padding-left: 20px;
+                        padding-bottom: 10px;
+                    }
+
+                    /* 设置内容区域列表项样式 */
+                    .content ul li {
+                        display: inline-block;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        color: #ffffff;
+                    }
+
+                    /* 设置内容区域链接样式 */
+                    .content ul li a {
+                        position: relative;
+                        top: 0px;
+                        /* 允许top属性生效 */
+                        padding: 10px 20px;
+                        /* 内边距 */
+                        /* margin-top: 10px; */
+                        text-decoration: none;
+                        /* 去除下划线 */
+                        color: #bb86fc;
+                        /* 初始颜色 */
+                        font-size: 1.1em;
+                        /* 字体大小 */
+                        transition: color 0.5s ease, top 0.5s ease;
+                        /* 过渡效果，颜色和top都设置为0.3秒 */
+                        border-radius: 10px;
+                        /* 边框圆角 */
+                        /* 你可以根据需要取消注释以下两行来添加文本和盒子阴影 */
+                        /* text-shadow: 1px 1px 1px rgba(234, 0, 255, 0.5); */
+                        box-shadow: 0 0px 10px rgb(255, 255, 255);
+                    }
+
+                    .content ul li a:hover {
+                        color: #000000;
+                        /* 鼠标悬停时的颜色 */
+                        top: -8px;
+                        /* 鼠标悬停时向上移动10px */
+                    }
+
+                    /* 设置常用软件样式 */
+                    .commonSoftware {
+                        padding: 1px 10px;
+                        border-radius: 1px;
+                    }
+
+                    /* 设置闪烁效果 */
+                    .highlight {
+                        animation: blink 1s;
+                    }
+
+                    @keyframes blink {
+
+                        0%,
+                        50%,
+                        100% {
+                            background-color: #f0f0f039;
+                        }
+
+                        25%,
+                        75% {
+                            background-color: #ffffff;
+                        }
+                    }
+                </style>
+            </head>
+
+            <body>
+                <!-- 页面标题 -->
+                <!-- <h1>网址导航</h1> -->
+
+                <!-- 页面容器 -->
+                <div class="container">
+                    <!-- 侧边栏 -->
+                    <div class="sidebar">
+                        <h2>导航栏</h2>
+                        <div>
+                            <a href="#">软件</a>
+                        </div>
+                        <div>
+                            <a href="#education">工具</a>
+                        </div>
+                        <div>
+                            <a href="#entertainment">编程</a>
+                        </div>
+                    </div>
+
+                    <!-- 内容区域 -->
+                    <div class="content1">
+
+                        <!-- 软件分类内容 -->
+                        <div class="content" id="tools">
+                            <h2>常用软件:</h2>
+                            <ul id="tools-common">
+                                <h3>常用</h3>
+                                <li><a href="https://im.qq.com/" target="_blank">QQ</a></li>
+                                <li><a href="https://weixin.qq.com/" target="_blank">微信</a></li>
+                                <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
+                                <li><a href="https://fanyi.youdao.com/" target="_blank">有道翻译</a></li>
+                                <li><a href="https://obsidian.md/" target="_blank">Obsidian</a></li>
+                                <li><a href="https://www.microsoft.com/en-us/edge" target="_blank">Edge浏览器</a></li>
+                                <li><a href="https://www.google.com/chrome/" target="_blank">谷歌浏览器</a></li>
+                                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                                <li><a href="https://www.xfxssr.com/index.php#/knowledge" target="_blank">小飞侠SSR</a>
+                                </li>
+                            </ul>
+                            <ul id="education-ai">
+                                <h3>AI:</h3>
+                                <li><a href="https://yiyan.baidu.com/chat/4511261086" target="_blank">文心一言</a></li>
+                                <li><a href="https://www.deepai.org/" target="_blank">DeepAI</a></li>
+                            </ul>
+                            <ul id="tools-music">
+                                <h3>音乐</h3>
+                                <li><a href="https://music.163.com/" target="_blank">网易云</a></li>
+                                <li><a href="https://y.qq.com/" target="_blank">QQ音乐</a></li>
+                                <li><a href="https://www.kugou.com/" target="_blank">酷狗音乐</a></li>
+                            </ul>
+                            <ul id="tools-video">
+                                <h3>视频</h3>
+                                <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
+                                <li><a href="https://www.jianyingapp.com/" target="_blank">荐片</a></li>
+                                <li><a href="https://v.qq.com/" target="_blank">腾讯视频</a></li>
+                                <li><a href="https://www.youku.com/" target="_blank">优酷</a></li>
+                                <li><a href="https://www.kuaishou.com/" target="_blank">快手</a></li>
+                                <li><a href="https://www.douyin.com/" target="_blank">抖音</a></li>
+                            </ul>
+                            <ul id="tools-music">
+                                <h3>设计</h3>
+                                <li><a href="https://pan.baidu.com/s/1uhPUtlI7JhUQr7eGXFdADA?pwd=1111"
+                                        target="_blank">pr</a></li>
+                                <li><a href="https://pan.baidu.com/s/1uhPUtlI7JhUQr7eGXFdADA?pwd=1111"
+                                        target="_blank">pr</a></li>
+                                <li><a href="https://pan.baidu.com/s/1uhPUtlI7JhUQr7eGXFdADA?pwd=1111"
+                                        target="_blank">PS</a></li>
+                                <li><a href="https://pan.baidu.com/s/1uhPUtlI7JhUQr7eGXFdADA?pwd=1111"
+                                        target="_blank">AE</a></li>
+                                <li><a href="https://pan.baidu.com/s/1uhPUtlI7JhUQr7eGXFdADA?pwd=1111"
+                                        target="_blank">C4D</a></li>
+                                <li><a href="https://pan.baidu.com/s/1uhPUtlI7JhUQr7eGXFdADA?pwd=1111"
+                                        target="_blank">CAD</a></li>
+                                <li><a href="https://www.capcut.cn/learning?page_enter_from=videocut_pc"
+                                        target="_blank">剪映</a></li>
+                            </ul>
+                            <ul id="tools-cloud">
+                                <h3>网盘:</h3>
+                                <li><a href="https://www.lanzou.com/" target="_blank">蓝奏云</a></li>
+                                <li><a href="https://pan.quark.cn/" target="_blank">夸克网盘</a></li>
+                                <li><a href="https://pan.baidu.com/" target="_blank">百度网盘</a></li>
+                                <li><a href="https://www.jianguoyun.com/" target="_blank">坚果云</a></li>
+                            </ul>
+                            <ul id="tools-document">
+                                <h3>文档处理</h3>
+                                <li><a href="https://obsidian.md/" target="_blank">Obsidian</a></li>
+                                <li><a href="https://www.wps.com/" target="_blank">WPS</a></li>
+                                <li><a href="https://www.office.com/" target="_blank">Office</a></li>
+                                <li><a href="https://docs.qq.com/" target="_blank">腾讯文档</a></li>
+                                <li><a href="https://shimo.im/" target="_blank">石墨文档</a></li>
+                                <li><a href="https://www.feishu.cn/" target="_blank">飞书文档</a></li>
+                                <li><a href="https://note.youdao.com/" target="_blank">有道云</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 资源分类内容 -->
+                        <div class="content" id="education">
+                            <h2>资源下载</h2>
+                            <ul id="education-system">
+                                <h3>资源下载:</h3>
+                                <li><a href="https://www.diskgenius.cn/" target="_blank">锯齿一号</a></li>
+                                <li><a href="https://www.diskgenius.cn/" target="_blank">致美化</a></li>
+                                <li><a href="https://snapany.com/zh/bilibili" target="_blank">哔哩哔哩视频解析</a></li>
+                                <li><a href="https://next.itellyou.cn/Original/" target="_blank">系统镜像</a></li>
+                            </ul>
+                            <ul id="education-system">
+                                <h3>图片下载:</h3>
+                                <li><a href="https://www.diskgenius.cn/" target="_blank">致美化</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 工具分类内容 -->
+                        <div class="content" id="education">
+                            <h2>工具</h2>
+                            <ul id="education-system">
+                                <h3>系统重装:</h3>
+                                <li><a href="https://www.diskgenius.cn/" target="_blank">DISKGenius：磁盘管理工具</a></li>
+                                <li><a href="https://rufus.ie/" target="_blank">RUFS：磁盘写入</a></li>
+                                <li><a href="https://www.ventoy.net/" target="_blank">Ventoy：系统安装</a></li>
+                                <li><a href="http://www.wepe.com.cn/" target="_blank">WePe：微软PE工具</a></li>
+                            </ul>
+                            <ul id="education-office">
+                                <h3>实用工具:</h3>
+                                <li><a href="https://www.greensoft.net/" target="_blank">greek：软件卸载</a></li>
+                                <li><a href="https://www.greensoft.net/" target="_blank">greek：软件卸载</a></li>
+                            </ul>
+
+                        </div>
+
+                        <!-- 编程分类内容 -->
+                        <div class="content" id="entertainment">
+                            <h2>编程</h2>
+                            <ul id="entertainment-language">
+                                <h3>语言学习:</h3>
+                                <li><a href="https://www.python.org/" target="_blank">Python</a></li>
+                                <li><a href="https://www.java.com/" target="_blank">Java</a></li>
+                                <li><a href="https://html.spec.whatwg.org/" target="_blank">HTML</a></li>
+                                <li><a href="https://www.w3.org/Style/CSS/" target="_blank">CSS</a></li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                        target="_blank">JavaScript</a></li>
+                                <li><a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></li>
+                                <li><a href="https://www.php.net/" target="_blank">PHP</a></li>
+                                <li><a href="https://www.mysql.com/" target="_blank">SQL</a></li>
+                                <li><a href="https://en.cppreference.com/w/c" target="_blank">c</a></li>
+                                <li><a href="https://isocpp.org/" target="_blank">C++</a></li>
+                                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a>
+                                </li>
+                                <li><a href="https://rufus.ie/" target="_blank">rufs</a></li>
+                            </ul>
+                            <ul id="entertainment-environment">
+                                <h3>语言环境:</h3>
+                                <li><a href="https://www.mingw-w64.org/" target="_blank">c语言：mingw</a></li>
+                                <li><a href="https://www.oracle.com/java/technologies/javase-downloads.html"
+                                        target="_blank">Java语言：jdk</a></li>
+                                <li><a href="https://www.anaconda.com/" target="_blank">Python语言：Anaconda</a></li>
+                                <li><a href="https://nodejs.org/" target="_blank">JavaScript语言：Node.js</a></li>
+                                <li><a href="https://www.typescriptlang.org/"
+                                        target="_blank">TypeScript语言：TypeScript</a></li>
+                                <li><a href="https://www.php.net/" target="_blank">PHP语言：phpstudy</a></li>
+                                <li><a href="https://www.mysql.com/" target="_blank">SQL语言：MySQL</a></li>
+                            </ul>
+                            <ul id="entertainment-compiler">
+                                <ul>
+                                    <h3>编译器:</h3>
+                                    <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+                                    </li>
+                                    <li><a href="https://www.jetbrains.com/idea/" target="_blank">IDEA</a></li>
+                                    <li><a href="https://www.sublimetext.com/" target="_blank">Sublime</a></li>
+                                    <li><a href="https://www.jetbrains.com/pycharm/" target="_blank">Pycharm</a></li>
+                                    <li><a href="https://www.easyx.cn/" target="_blank">Easaxy分装devc++</a></li>
+                                </ul>
+                            </ul>
+                            <ul id="entertainment-website">
+                                <ul>
+                                    <h3>网站:</h3>
+                                    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                                    <li><a href="https://gitee.com/" target="_blank">gitee</a></li>
+                                    <li><a href="https://gitee.com/" target="_blank">码云</a></li>
+                                    <li><a href="https://www.ssrtool.com/" target="_blank">小飞侠SSR</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </body>
+
+
+            </html>
